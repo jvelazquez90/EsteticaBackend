@@ -36,7 +36,7 @@ public class ControllerUsuario extends HttpServlet {
         Connection conn =  connection.getConnection();
         
         try{
-            String query = "SELECT idUsuario,user,password,email,ultimoAcceso FROM usuario;";
+            String query = "SELECT * FROM usuario;";
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             
