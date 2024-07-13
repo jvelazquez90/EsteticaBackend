@@ -33,7 +33,7 @@ public class ControllerPaciente extends HttpServlet {
         Connection conn =  connection.getConnection();
         
         try{
-            String query = "SELECT * FROM paciente";
+            String query = "SELECT * FROM persona INNER JOIN paciente ON persona.idPersona = paciente.Persona_id";
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             
