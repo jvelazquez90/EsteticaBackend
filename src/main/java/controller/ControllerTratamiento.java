@@ -71,17 +71,7 @@ public class ControllerTratamiento extends HttpServlet {
         ConexionMySQL conexion = new ConexionMySQL();
         
         Connection conn = conexion.getConnection();
-        /*
-        String nombre = request.getParameter("nombre");
-        String cantidadSesiones =request.getParameter("cantidadSesiones");
-        String tiempo = request.getParameter("tiempo");
-        String precio = request.getParameter("precio");
         
-        System.out.println("NOMBRE: " + nombre);
-        System.out.println("SESIONES: " + cantidadSesiones);
-        System.out.println("TIEMPO: " + tiempo);
-        System.out.println("PRECIO: " + precio);
-        */     
         try{
             ObjectMapper mapper = new ObjectMapper();
             
